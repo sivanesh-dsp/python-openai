@@ -1,14 +1,14 @@
 import os
 import openai
 
-openai.api_key ='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'
+openai.api_key ='your_secret_key'
 
 def whole_program():
 
   prompt=input("whats you question..?\n")
 
   response = openai.Completion.create(
-    model="text-davinci-002",
+    model="text-davinci-002",          #you can change your model here...
     prompt=prompt,
     temperature=0.4,
     max_tokens=32,
