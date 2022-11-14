@@ -11,7 +11,7 @@ def whole_program():
     model="text-davinci-002",          #you can change your model here...
     prompt=prompt,
     temperature=0.4,
-    max_tokens=32,
+    max_tokens=32,  # increase the tokens you will get more breif answers
   )
   output=response['choices']
   outputNeeded=output[0]
